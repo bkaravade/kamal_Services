@@ -30,7 +30,7 @@
                 <h4>Login</h4>
               </div>
               <div class="card-body">
-                <form method="POST" action="page2.html" class="needs-validation" novalidate="">
+                
                   <div class="form-group">
                     <label for="email">Email</label>
                     <input id="email" type="email" class="form-control" name="email" value="abc@kamal.com" tabindex="1" required disabled>
@@ -52,20 +52,20 @@
                       <label for="password" class="control-label">User Type</label>
                     </div>
                     <!-- <input id="password" type="password" class="form-control" name="password" value ="kamal"tabindex="2" required disabled> -->
-                    <select class="form-control">
-                        <option value="admin">ADMIN</option>
-                        <option value="emp">EEMPLOYEE</option>
+                    <select class="form-control" id="user_id">
+                        <option value="adnim">ADMIN</option>
+                        <option value="EmpLyy">EEMPLOYEE</option>
                     </select>
                     <div class="invalid-feedback">
                       Select User Type
                     </div>
                   </div>
                   <div class="form-group">
-                    <button type="submit" class="btn btn-primary btn-lg btn-block" tabindex="4">
+                    <button type="submit" class="btn btn-primary btn-lg btn-block" tabindex="4" onclick="window.location.href='page2.html?type='+$('#user_id').val()">
                       Login
                     </button>
                   </div>
-                </form>
+                
               </div>
             </div>
            
